@@ -1,0 +1,58 @@
+#sleft, #sright {
+  width: 25%;
+  background-color: #F0EFF4;
+  float: left;
+  min-height: 100rem;
+  padding-top: 3rem;
+}
+#smid {
+  width: 50%;
+  background-color: #F0EFF4;
+  float: left;
+  min-height: 100rem;
+  text-align: center;
+}
+#midcontainer{
+  background-color:#FF7A33;
+  color: #F0EFF4;
+  padding: 3rem 1rem;
+  text-align: left;
+
+}
+#leftcontainer {
+  text-align: center;
+  padding: 0.5rem 1rem;
+}
+
+#rightcontainer {
+  text-align: left;
+  margin-left: 0.5rem;
+  margin-right: 2;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+#sleft {
+}
+h1{
+  text-align: center;
+}
+
+.legends {
+  text-align: right;
+  font-style: italic;
+}
+
+.nomargin {
+  margin: 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.orangetitle {
+  background-color: #FF7A33;
+  color: #F0EFF4;
+  margin: 0;
+}
