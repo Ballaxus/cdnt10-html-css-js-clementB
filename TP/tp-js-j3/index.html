@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="script.js"></script>
+</head>
+  <body>
+    <div>
+        <input id="code1input" type="text" maxlength="8" placeholder="saisissez votre code en 8 chiffres" style="border-style: none none solid none;" >
+        <br>
+        <button onclick="test1()" id="btn-validate" style="border-radius: 1rem; color: #fff; background-color: red; padding: 0.2rem 1.5rem; border-color: red;">valider</button>
+    </div>
+    <div style="display: none;" id="pad">
+      tteeeest
+    </div>
+
+    
+    <script>
+var code1 = $("#code1input");
+
+var btnValidate = $("#btn-validate");
+
+btnValidate.attr('disabled', true);
+
+code1.keyup(() => {
+  if(code1.val().length === 8 && !isNaN(code1.val())) {
+    btnValidate.attr('disabled', false);
+  }
+  else
+  btnValidate.attr('disabled', true);
+})
+
+function test1() {
+$("#pad").css('display', 'block')
+}
+
+    </script>
+  </body>
+</html>
